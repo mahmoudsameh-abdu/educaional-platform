@@ -1,0 +1,417 @@
+root{
+    --first-color:#DEAA79;
+    --second-color:#FFE6A9;
+    --third-color:#B1C29E;
+    --forth-colo:#659287;
+}
+.continar .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background:#DEAA79;
+    text-transform: capitalize;
+    align-content: center;
+}
+.continar .header .logo{
+    color: white;
+    position: relative;
+    z-index: 1;
+
+}
+.continar .header .logo::first-letter{
+    color:#659287;
+    font-size: 20px;
+    font-weight: bold;
+}
+.continar .header .logo::before{
+content: "";
+position: absolute;
+height: 20px;
+width: 20px;
+background: transparent;
+border: 3px solid #B1C29E;
+border-radius: 50%;
+top: -10px;
+left: -12px;
+z-index: -1;
+
+}
+.continar .header .search input{
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+.continar .header .links ul{
+ list-style: none;
+ display: flex;
+ 
+ margin: 0;
+ padding: 0;
+}
+.continar .header .links .icon-links{
+    width: 40px;
+    display: none;
+}
+.continar .header .links .icon-links span{
+    height: 2px;
+    width: 100%;
+    display: block;
+    background-color: rgb(9, 185, 76);
+    margin-top: 4px;
+
+}
+.continar .header .links ul li a{
+    margin-left: 10px;
+    cursor: pointer;
+    transition: .5s;
+    text-decoration: none;
+    color: #222;
+}
+.continar .header .links ul li a:hover{
+    color: var(--forth-colo);
+}
+/* seaction home */
+
+.continar .home{
+
+ height:calc(100vb - 53px);
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ align-content: center;
+ justify-content: center;
+ 
+}
+.continar .home img{
+    height: 100%;
+}
+.continar .home h1,p{
+  color: rgb(185, 230, 23); 
+  margin: 0;
+  padding: 0; 
+}
+.continar .home p{
+font-size: 10px;
+}
+.services{
+    height:100vb;
+    background-color:#f6f6f6 ;
+    padding: 20px ;
+    text-align: center;
+}
+.services h1{
+
+}
+.services .content{
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+
+
+}
+.services .content .box{
+border: 4px #ccc solid;
+cursor: pointer;
+}
+.services .content .box:hover{
+    box-shadow: 0px 0px 6px rgb(169, 38, 38);
+    transition: 1s;
+}
+.services .content .box img{
+    height: 175px;
+    width: 145px;
+
+}
+.services .content .box a{
+color: #38619f;
+text-transform: capitalize;
+padding: 10px 0 10px 0;
+transition: 1s;
+display: block;
+text-decoration: none;
+}
+.services .content .box a:hover{
+    color: red;
+    text-shadow:-1px -1px 6px  #222;
+}
+/* about */
+.about{
+height: 100vb;
+padding: 30px;
+display: flex;
+align-items: center;
+position: relative;
+}
+.about .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about img{
+height: 250px;
+position: absolute;
+right: 0;
+animation-name: ltr;
+animation-duration: 1s;
+animation-iteration-count: infinite ;
+animation-timing-function: linear;
+animation-direction: alternate;
+}
+.about p{
+    width: 300px;
+}
+@keyframes ltr{
+from{
+    right: 0;
+}
+to{
+right: 20px;
+}
+}
+.contact{
+    height: 100VB;
+    position: relative;
+}
+.contact IMG{
+    position: absolute;
+    z-index: -1; 
+    height: 100%; ;
+    width: 100%;
+    opacity: 54%;
+} 
+.contact form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact form input{
+    border: 1px solid pink;
+    outline: none;
+    margin: 3px;
+    background: transparent;
+    font-size: 10px;
+    padding: 4px 6px;
+}
+.contact form .submit{
+    display: block;
+    width: 15px;
+    cursor: pointer;
+    transition: 2s;
+}
+.contact form input:focus{
+    background-color: #222;
+}
+.contact form input:hover{
+    background-color: antiquewhite;
+}
+.footer{
+    background-color: #B1C29E;
+    height: 100px;
+    color: #659287;
+    text-align: center;
+    padding: 20px;
+}
+.footer p{
+    color: inherit;
+}
+@media(min-width:300px) and (max-width:500px){
+    .continar .header .links .icon-links{
+        display: block;
+    }
+    .continar .header .links ul{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* :root{
+    --first-color:#DEAA79;
+    --second-color:#FFE6A9;
+    --third-color:#B1C29E;
+    --forth-colo:#659287;
+}
+ /* header */ 
+.continar .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background:#DEAA79;
+    text-transform: capitalize;
+    align-content: center;
+}
+.continar .header .logo{
+    color: white;
+    position: relative;
+    z-index: 1;
+
+}
+.continar .header .logo::first-letter{
+    color:#659287;
+    font-size: 20px;
+    font-weight: bold;
+}
+.continar .header .logo::before{
+content: "";
+position: absolute;
+height: 20px;
+width: 20px;
+background: transparent;
+border: 3px solid #B1C29E;
+border-radius: 50%;
+top: -10px;
+left: -12px;
+z-index: -1;
+
+}
+.continar .header .search input{
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+.continar .header .links ul{
+ list-style: none;
+ display: flex;
+ 
+ margin: 0;
+ padding: 0;
+}
+.continar .header .links ul li a{
+    margin-left: 10px;
+    cursor: pointer;
+    transition: .5s;
+    text-decoration: none;
+    color: #000000;
+}
+.continar .header .links ul li:hover a{
+    color: var(--forth-colo);
+}
+
+
+.continar .home{
+
+ height:calc(100vb - 53px);
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ align-content: center;
+ justify-content: center;
+ 
+}
+.continar .home img{
+    height: 100%;
+}
+.continar .home h1,p{
+  color: black; 
+  margin: 0;
+  padding: 0; 
+}
+.continar .home p{
+font-size: 10px;
+}
+
+.services{
+    height: 100vp;
+    background-color: #f7e8c2;
+    padding: 20px;
+    text-align: center;
+}
+.services h1{
+
+}
+.services .content .box{
+    border: 4px rgb(232, 226, 226) solid;
+    cursor: pointer;
+}
+.services .content .box :hover{
+    box-shadow:0px 0px 5px black;
+    transition: 1s;
+}
+
+.services .content {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+
+}
+
+
+
+.services .content .box img{
+    width: 178px;
+    height: 145px;
+}
+.services .content .box a{
+    color: #222;
+    text-transform: capitalize;
+    padding-top: 10px 0px 10px 0px;
+    transition: 0.5s;
+    display: block;
+    text-decoration: none;
+    
+}
+.services .content .box a:hover{
+    color: rgb(196, 15, 15);
+    text-shadow:2px 2px 2px black;
+}
+.about {
+   height: 100vb;
+   padding: 10px;
+   display: flex;
+ 
+   align-items: center;
+}
+.about img{
+    
+    height: 250px;
+   
+    position: absolute;
+    right: 0;
+    animation-name: ltr;
+    animation-duration: 1s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+.about p{
+    width: 300px;
+}
+.about .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+@keyframes ltr{
+    form{
+        right: 0;
+    }
+    to{
+        right: 20px;
+    }
+} */
